@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-h = 0.0001#The sttep size
+h = 0.0001#The step size
 B1 = 0.0776#(rho * A)/2m
 B2 = 2.2#B2 = spin angular velocity of the football \times Radius of the football, hence parameter for spin angular velocity
 kl = 0.005998
@@ -60,7 +60,7 @@ X20=[2.7,2.3,2.5,3.1,3.2]
 Y20=[14.64,22,22,18,25]
 Z20=[7.8,7.8,7.6,7.9,8.4]
 
-#when B2 rises by 1.1 the spin angular velocity rises by 10rad per sec
+#when B2 rises by 1.1 so that the spin angular velocity rises by 10rad per sec
 while(B2<=5.5):
     lum=0#a flag for counting
     while lum<5:
@@ -161,17 +161,20 @@ while(B2<=5.5):
         Vf = round(np.sqrt(x2*x2 + y2*y2 + z2*z2), 2)
         print("Final velocity |v_f|={}m/s".format(Vf))
         print("(x,y,z)=({},{},{})".format(round(x1,2),round(y1, 2),round(z1, 2)))
+        
+        
         fig = plt.figure()
         ax = fig.add_subplot(1,2,1,projection='3d')
         ax.set_xlabel('x')
         ax.set_ylabel('y')
         ax.set_zlabel('z')
-        ax.scatter3D(x1,y1,z1, color='black')
+        ax.scatter3D(x1,y1,z1, color='black')#Final position of the ball
+        #Goalpost
         ax.plot3D(G1x, G1y, G1z, color='r')
         ax.plot3D(G2x, G2y, G2z, color='r')
         ax.plot3D(G3x, G3y, G3z, color='r')
         ax.plot3D(G4x, G4y, G4z, color='r')
-        ax.plot3D(X1,Y1,Z1)
+        ax.plot3D(X1,Y1,Z1)#Locus
         
         plt.subplot(1,2,2)
         plt.axvline(linewidth=1.1,color='b',linestyle='-')
