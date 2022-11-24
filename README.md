@@ -1,3 +1,4 @@
+#DYNAMICS OF A FOOTBALL
 I wrote this code during the [University Physics Competition
 2022](http://www.uphysicsc.com/2022contest.html). This code solves the
 2<sup>nd</sup> -order ordinary coupled differential equations. The
