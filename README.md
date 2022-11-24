@@ -22,10 +22,5 @@ The 2<sup>nd</sup>-order differential equations were solved by the
 motion of an in-flight soccer ball." *Sports engineering* 16.1 (2013):
 29-41.
 
-<sup>2</sup> S. H¨orzer, C. Fuchs, R. Gastinger, A. Sabo, L. Mehnen, J.
-Martinek, and M. Reichel.
-
-Simulation of spinning soccer ball trajectories influenced by altitude.
-Procedia Engineering,
-
-2(2):2461–2466, 2010. The Engineering of Sport 8 - Engineering Emotion.
+<sup>2</sup> Hörzer, S., et al. "Simulation of spinning soccer ball trajectories 
+influenced by altitude." Procedia Engineering 2.2 (2010): 2461-2466.
